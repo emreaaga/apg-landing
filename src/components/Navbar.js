@@ -114,7 +114,7 @@ const Navbar = ({ isScrolled, mounted }) => {
           exit={{ opacity: 0, y: -20 }}
           className="md:hidden absolute top-16 inset-x-0 bg-white dark:bg-[#262626]  border-b"
         >
-          <div className="py-4 px-5 flex flex-col gap-4">
+          {/* <div className="py-4 px-5 flex flex-col gap-4">
             <Link
               href="/features"
               className="py-2 text-sm font-medium"
@@ -158,7 +158,7 @@ const Navbar = ({ isScrolled, mounted }) => {
                 </Button>
               </Link>
             </div>
-          </div>
+          </div> */}
         </motion.div>
       )}
     </header>
