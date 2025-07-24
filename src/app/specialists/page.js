@@ -15,42 +15,36 @@ const specialists = [
     role: "Бухгалтер, 10+ лет опыта",
     description:
       "Специалист по ведению бухгалтерского учета и налоговой отчетности для малого и среднего бизнеса.",
-    avatar: "/avatars/anna.png",
   },
   {
     name: "Дмитрий Соколов",
     role: "Веб-разработчик, Full-Stack",
     description:
       "Создает современные веб-приложения с использованием React, Node.js и других технологий.",
-    avatar: "/avatars/dmitry.png",
   },
   {
     name: "Екатерина Морозова",
     role: "Юрист по корпоративному праву",
     description:
       "Помогает с составлением договоров, регистрацией компаний и юридическим сопровождением.",
-    avatar: "/avatars/ekaterina.png",
   },
   {
     name: "Иван Петров",
     role: "Маркетолог, Digital-стратег",
     description:
       "Разрабатывает эффективные маркетинговые кампании и стратегии продвижения в digital.",
-    avatar: "/avatars/ivan.png",
   },
   {
     name: "Мария Лебедева",
     role: "Дизайнер UX/UI",
     description:
       "Создает интуитивно понятные интерфейсы и привлекательный дизайн для веб и мобильных приложений.",
-    avatar: "/avatars/maria.png",
   },
   {
     name: "Алексей Иванов",
     role: "ИТ-консультант",
     description:
       "Оптимизирует ИТ-процессы и помогает внедрять современные технологии в бизнес.",
-    avatar: "/avatars/alexey.png",
   },
 ];
 
@@ -77,7 +71,6 @@ export default function SpecialistsPage() {
               <CardContent className="flex flex-col space-y-2">
                 <div className="flex items-center gap-4">
                   <Avatar className="w-16 h-16">
-                    <AvatarImage src={specialist.avatar} alt={specialist.name} />
                     <AvatarFallback>{specialist.name[0]}</AvatarFallback>
                   </Avatar>
                   <div className="flex flex-col text-left">
