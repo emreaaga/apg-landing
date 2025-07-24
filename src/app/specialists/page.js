@@ -104,9 +104,12 @@ export default function SpecialistsPage() {
         <p className="text-muted-foreground mt-2">
           Начните работу с профессионалами уже сегодня!
         </p>
-        <Button className="mt-4 px-8 py-4 text-lg rounded-lg shadow-lg cursor-pointer">
-          Подобрать специалиста
-        </Button>
+        <Link href="/contact-us" passHref>
+          <Button className="mt-4 px-8 py-4 text-lg rounded-lg shadow-lg cursor-pointer">
+            Подобрать специалиста
+          </Button>
+        </Link>
+
       </motion.div>
     </section>
   );

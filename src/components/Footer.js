@@ -158,7 +158,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/#"
+                  href="/careers"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Вакансии

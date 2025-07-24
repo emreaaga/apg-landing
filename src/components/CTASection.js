@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 const CTASection = () => {
   return (
@@ -26,7 +27,11 @@ const CTASection = () => {
             Присоединяйтесь к сотням клиентов, которые уже доверили нам свои задачи и получили профессиональные решения.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
-            <Button
+            <Link
+              href="/specialists"
+              passHref
+            >
+              <Button
               size="lg"
               variant="secondary"
               className="rounded-full h-12 px-8 text-base cursor-pointer group"
@@ -37,13 +42,20 @@ const CTASection = () => {
                transition-all ease-in-out duration-200 size-4"
               />
             </Button>
-            <Button
+            </Link>
+
+            <Link
+              href="/contact-us"
+              passHref
+            >
+              <Button
               size="lg"
               variant="outline"
               className="rounded-full h-12 px-8 text-base bg-transparent border-white text-white hover:text-white hover:bg-white/10 cursor-pointer dark:text-neutral-700 dark:bg-white dark:hover:bg-gray-100"
             >
               Заказать консультацию
             </Button>
+            </Link>
           </div>
           <p className="text-sm text-primary-foreground/80 mt-4">
             Без предоплаты. Прозрачный договор. Отмена в любой момент.

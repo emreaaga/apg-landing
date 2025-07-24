@@ -33,9 +33,8 @@ const Navbar = () => {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full backdrop-blur-lg transition-all duration-300 px-10 ${
-        isScrolled ? "bg-background/80 shadow-sm" : "bg-transparent"
-      }`}
+      className={`sticky top-0 z-50 w-full backdrop-blur-lg transition-all duration-300 px-10 ${isScrolled ? "bg-background/80 shadow-sm" : "bg-transparent"
+        }`}
     >
       <div className="flex h-16 items-center justify-between">
         <Link href="/">
@@ -52,6 +51,12 @@ const Navbar = () => {
         </Link>
 
         <nav className="hidden md:flex gap-8">
+          <Link
+            href="/"
+            className="text-base font-medium text-muted-foreground transition-colors hover:text-foreground"
+          >
+            Главное
+          </Link>
           <Link
             href="/specialists"
             className="text-base font-medium text-muted-foreground transition-colors hover:text-foreground"

@@ -4,59 +4,56 @@ import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Briefcase, Users } from "lucide-react";
-import { Rocket } from "lucide-react";
-import { Lightbulb } from "lucide-react";
+import { Briefcase, Users, Rocket, Lightbulb } from "lucide-react";
 import FAQSection from "@/components/FAQSection";
+
 const jobs = [
   {
-    title: "Senior Frontend Developer",
+    title: "Senior Full-Stack Developer",
     description:
-      "We are looking for an experienced React developer to join our team and build amazing SaaS products.",
-    location: "Remote",
-    type: "Full-Time",
+      "Ищем опытного разработчика React для создания мощных APG-продуктов.",
+    location: "Удалённо",
+    type: "Частичная занятость",
   },
   {
-    title: "Backend Engineer",
+    title: "Бухгалтер",
     description:
-      "Join our backend team to work on scalable APIs and cloud-based solutions.",
-    location: "Remote",
-    type: "Full-Time",
+      "Присоединяйся к фин-команде, и принимай заказы.",
+    location: "Удалённо",
+    type: "Частичная занятость",
   },
   {
     title: "UI/UX Designer",
     description:
-      "Design stunning interfaces and improve the user experience of our SaaS applications.",
-    location: "Hybrid",
-    type: "Part-Time",
+      "Создавай удобные интерфейсы и улучшай пользовательский опыт.",
+    location: "Гибрид",
+    type: "Частичная занятость",
   },
 ];
+
 const benefits = [
   {
     icon: <Rocket className="size-10 text-primary" />,
-    title: "Fast-Paced Growth",
-    description:
-      "Work in a dynamic environment where innovation meets execution.",
+    title: "Быстрый рост",
+    description: "Работаем в темпе — быстро запускаем, быстро учимся, быстро растём.",
   },
   {
     icon: <Lightbulb className="size-10 text-yellow-400" />,
-    title: "Innovative Culture",
-    description:
-      "We foster creativity and provide a space for your ideas to thrive.",
+    title: "Культура идей",
+    description: "Поддерживаем инициативу и любим нестандартные решения.",
   },
   {
     icon: <Users className="size-10 text-blue-500" />,
-    title: "Collaborative Team",
-    description:
-      "Join a team of like-minded professionals who push boundaries together.",
+    title: "Командная работа",
+    description: "Вместе думаем, вместе делаем, вместе побеждаем.",
   },
   {
     icon: <Briefcase className="size-10 text-green-500" />,
-    title: "Career Advancement",
-    description:
-      "We invest in your growth with mentorship and upskilling programs.",
+    title: "Карьерный рост",
+    description: "Менторство, обучение, прокачка — всё включено.",
   },
 ];
+
 const CareersPage = () => {
   return (
     <>
@@ -72,14 +69,13 @@ const CareersPage = () => {
             className="rounded-full px-4 py-1.5 text-sm font-medium"
             variant="secondary"
           >
-            Careers
+            Вакансии
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mt-4">
-            Join Our Growing SaaS Team
+            Присоединяйся к нашей APG-команде
           </h2>
           <p className="text-muted-foreground mt-3 max-w-xl mx-auto">
-            Be part of an innovative team that&apos;s building the future of
-            SaaS. Explore open roles and apply today!
+            Хочешь менять будущее цифровых продуктов? Мы ищем таких, как ты.
           </p>
         </motion.div>
 
@@ -93,7 +89,7 @@ const CareersPage = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <Card className="overflow-hidden rounded-xl shadow-lg bg-background dark:bg-muted/10 hover:shadow-xl transition-all">
-                <CardContent className="">
+                <CardContent>
                   <h3 className="text-xl font-semibold flex items-center gap-2">
                     <Briefcase className="size-5 text-primary" /> {job.title}
                   </h3>
@@ -110,7 +106,7 @@ const CareersPage = () => {
                     variant="outline"
                     className="mt-4 w-full cursor-pointer"
                   >
-                    Apply Now
+                    Откликнуться
                   </Button>
                 </CardContent>
               </Card>
@@ -118,13 +114,14 @@ const CareersPage = () => {
           ))}
         </div>
       </section>
-      <section className="relative py-20 px-6 md:px-10  dark:from-muted/50 dark:to-muted/30 ">
+
+      <section className="relative py-20 px-6 md:px-10 dark:from-muted/50 dark:to-muted/30">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl font-bold tracking-tight">
-            Why Work With Us?
+            Почему стоит работать с нами?
           </h2>
-          <p className=" mt-3">
-            Join a company that values growth, innovation, and collaboration.
+          <p className="mt-3">
+            Мы создаём среду, где ценится рост, поддерживается инициатива и важна команда.
           </p>
         </div>
 
@@ -140,12 +137,11 @@ const CareersPage = () => {
             >
               <div className="mb-4 flex justify-center">{benefit.icon}</div>
               <h3 className="text-xl font-semibold">{benefit.title}</h3>
-              <p className=" mt-2">{benefit.description}</p>
+              <p className="mt-2">{benefit.description}</p>
             </motion.div>
           ))}
         </div>
       </section>
-      <FAQSection />
     </>
   );
 };
