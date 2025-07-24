@@ -7,7 +7,6 @@ import React, { useState } from "react";
 import { Button } from "./ui/button";
 import { X } from "lucide-react";
 import { Menu } from "lucide-react";
-import { ChevronRight } from "lucide-react";
 import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -44,20 +43,20 @@ const Navbar = ({ isScrolled, mounted }) => {
             className="text-base font-medium text-muted-foreground transition-colors hover:text-foreground"
           >
             Features
-          </Link>
+          </Link> */}
           <Link
-            href="/testimonials"
+            href="/specialists"
             className="text-base font-medium text-muted-foreground transition-colors hover:text-foreground"
           >
-            Testimonials
+            Специалисты
           </Link>
-          <Link
+          {/* <Link
             href="/pricing"
             className="text-base font-medium text-muted-foreground transition-colors hover:text-foreground"
           >
             Pricing
-          </Link>
-          <Link
+          </Link> */}
+          {/* <Link
             href="/faq"
             className="text-base font-medium text-muted-foreground transition-colors hover:text-foreground"
           >
