@@ -1,12 +1,21 @@
 "use client";
 
-import { Moon, Sun, X, Menu, ChevronRight } from "lucide-react";
+import { Moon, Sun, X, Menu } from "lucide-react";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import {
+  NavigationMenu,
+  NavigationMenuItem,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuLink
+} from "@/components/ui/navigation-menu";
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
@@ -21,7 +30,7 @@ const Navbar = () => {
       setIsScrolled(window.scrollY > 10);
     };
 
-    handleScroll(); // init state
+    handleScroll();
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -33,10 +42,9 @@ const Navbar = () => {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full backdrop-blur-lg transition-all duration-300 px-10 ${isScrolled ? "bg-background/80 shadow-sm" : "bg-transparent"
-        }`}
+      className={`sticky top-0 z-50 w-full backdrop-blur-lg transition-all duration-300 px-6 ${isScrolled ? "bg-background/80 shadow-sm" : "bg-transparent"}`}
     >
-      <div className="flex h-16 items-center justify-between">
+      <div className="flex h-16 items-center justify-between max-w-7xl mx-auto">
         <Link href="/">
           <div className="flex items-center gap-2 font-bold">
             <Image
@@ -50,7 +58,7 @@ const Navbar = () => {
           </div>
         </Link>
 
-        <nav className="hidden md:flex gap-8">
+        <nav className="hidden md:flex gap-6 items-center">
           <Link
             href="/"
             className="text-base font-medium text-muted-foreground transition-colors hover:text-foreground"
@@ -63,9 +71,29 @@ const Navbar = () => {
           >
             Специалисты
           </Link>
+          <NavigationMenu>
+            <NavigationMenuList>
+              <NavigationMenuItem>
+                <NavigationMenuTrigger className="text-base font-medium text-muted-foreground hover:text-foreground bg-transparent">
+                  Услуги
+                </NavigationMenuTrigger>
+                <NavigationMenuContent className="p-4 bg-popover shadow-lg rounded-md min-w-[200px]">
+                  <NavigationMenuLink asChild>
+                    <Link href="/services/legal">Юридические</Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link href="/">Бухгалтерские</Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link href="/">IT-Услуги</Link>
+                  </NavigationMenuLink>
+                </NavigationMenuContent>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
         </nav>
 
-        <div className="hidden md:flex gap-4 items-center">
+        <div className="flex items-center gap-4">
           <Button
             variant="ghost"
             size="icon"
@@ -79,52 +107,57 @@ const Navbar = () => {
             )}
             <span className="sr-only">Toggle theme</span>
           </Button>
-        </div>
-
-        <div className="flex items-center gap-4 md:hidden">
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={toggleTheme}
-            className="rounded-full cursor-pointer"
-          >
-            {mounted && theme === "dark" ? (
-              <Sun className="size-[18px]" />
-            ) : (
-              <Moon className="size-[18px]" />
-            )}
-          </Button>
           <Button
             variant="ghost"
             size="icon"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="md:hidden"
           >
             {mobileMenuOpen ? <X className="size-5" /> : <Menu className="size-5" />}
             <span className="sr-only">Toggle menu</span>
           </Button>
         </div>
-      </div>
 
-      {mobileMenuOpen && (
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -20 }}
-          className="md:hidden absolute top-16 inset-x-0 bg-white dark:bg-[#262626] border-b"
-        >
-          <div className="py-4 px-5 flex flex-col gap-4">
-            <div className="flex flex-col gap-2 pt-2 border-t">
+        {mobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            className="md:hidden absolute top-16 inset-x-0 bg-white dark:bg-[#262626] border-b shadow-md"
+          >
+            <div className="py-4 px-6 flex flex-col gap-4">
+              <Link
+                href="/"
+                className="py-2 text-sm font-medium text-foreground hover:underline"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Главное
+              </Link>
               <Link
                 href="/specialists"
-                className="py-2 text-sm font-medium"
+                className="py-2 text-sm font-medium text-foreground hover:underline"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Специалисты
               </Link>
+              <div className="pl-4">
+                <span className="text-sm font-medium text-muted-foreground">Услуги</span>
+                <div className="mt-2 space-y-2">
+                  <Link href="/services/legal" className="block py-1 text-sm text-foreground hover:underline" onClick={() => setMobileMenuOpen(false)}>
+                    Юридические
+                  </Link>
+                  <Link href="/" className="block py-1 text-sm text-foreground hover:underline" onClick={() => setMobileMenuOpen(false)}>
+                    Бухгалтерские
+                  </Link>
+                  <Link href="/" className="block py-1 text-sm text-foreground hover:underline" onClick={() => setMobileMenuOpen(false)}>
+                    IT-услуги
+                  </Link>
+                </div>
+              </div>
             </div>
-          </div>
-        </motion.div>
-      )}
+          </motion.div>
+        )}
+      </div>
     </header>
   );
 };
