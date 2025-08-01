@@ -87,6 +87,15 @@ const Navbar = () => {
                   <NavigationMenuLink asChild>
                     <Link href="/">IT-Услуги</Link>
                   </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link href="/">HR-услуги</Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link href="/">Услуги налового эксперта</Link>
+                  </NavigationMenuLink>
+                  <NavigationMenuLink asChild>
+                    <Link href="/">Иные услуги</Link>
+                  </NavigationMenuLink>
                 </NavigationMenuContent>
               </NavigationMenuItem>
             </NavigationMenuList>
