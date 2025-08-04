@@ -24,6 +24,6 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/app/specialists/page.js"  ],
+, "src/app/[locale]/specialists/page.js"  ],
   "exclude": ["node_modules"]
 }

@@ -1,12 +1,13 @@
 "use client";
 
 import { Moon, Sun, X, Menu } from "lucide-react";
-import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { Link } from '@/i18n/navigation';
+import { useLocale } from 'next-intl';
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -16,8 +17,10 @@ import {
   NavigationMenuIndicator,
   NavigationMenuLink
 } from "@/components/ui/navigation-menu";
+import { LanguageSwitcher } from "@/components/language-switcher";
 
 const Navbar = () => {
+  const locale = useLocale();
   const { theme, setTheme } = useTheme();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -91,7 +94,7 @@ const Navbar = () => {
                     <Link href="/">HR-услуги</Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link href="/">Услуги налового эксперта</Link>
+                    <Link href="/">Налоговый консалтинг</Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
                     <Link href="/">Иные услуги</Link>
@@ -103,6 +106,7 @@ const Navbar = () => {
         </nav>
 
         <div className="flex items-center gap-4">
+          <LanguageSwitcher currentLocale={locale}/>
           <Button
             variant="ghost"
             size="icon"

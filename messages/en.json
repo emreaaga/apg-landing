@@ -1,0 +1,12 @@
+{
+  "HeroSection": {
+    "badge": "Launch soon", 
+    "title": "Your business — our professionals",
+    "description": "A platform to quickly find vetted experts, from accountants to developers. We handle the contracts and guarantee results.",
+    "ctaPrimary": "Find a specialist",
+    "ctaSecondary": "Request a consultation",
+    "featureNoPrepay": "No prepayment",
+    "featureTransparentContract": "Transparent contract",
+    "featureQualityGuarantee": "Quality guarantee"
+  }
+}

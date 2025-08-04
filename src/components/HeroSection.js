@@ -6,8 +6,11 @@ import { ArrowRight } from "lucide-react";
 import { Check } from "lucide-react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const HeroSection = () => {
+  const t = useTranslations('HeroSection');
+
   return (
     <section className="w-full py-20 overflow-hidden">
       <div className="px-4 md:px-6 relative py-5">
@@ -23,13 +26,13 @@ const HeroSection = () => {
             className="mb-4 rounded-full px-4 py-1.5 text-sm font-medium"
             variant="secondary"
           >
-            Скоро запуск
+            {t('badge')}
           </Badge>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
-            Ваш бизнес — наши профессионалы
+            {t('title')}
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Платформа, где вы быстро найдете проверенных специалистов: от бухгалтеров до разработчиков. Мы берем на себя договоры и гарантируем результат.
+            {t('description')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -40,7 +43,7 @@ const HeroSection = () => {
                 size="lg"
                 className="rounded-full h-12 px-8 text-base cursor-pointer group"
               >
-                Подобрать специалиста
+                {t('ctaPrimary')}
                 <ArrowRight className="group-hover:translate-x-1 transition-all ease-in-out duration-200 size-4" />
               </Button>
             </Link>
@@ -50,22 +53,22 @@ const HeroSection = () => {
                 variant="outline"
                 className="rounded-full h-12 px-8 text-base cursor-pointer"
               >
-                Заказать консультацию
+                {t('ctaSecondary')}
               </Button>
             </Link>
           </div>
           <div className="flex items-center justify-center gap-4 mt-6 text-sm text-muted-foreground">
             <div className="flex items-center gap-1">
               <Check className="size-4 text-primary" />
-              <span>Без предоплаты</span>
+              <span>{t('featureNoPrepay')}</span>
             </div>
             <div className="flex items-center gap-1">
               <Check className="size-4 text-primary" />
-              <span>Прозрачный договор</span>
+              <span>{t('featureTransparentContract')}</span>
             </div>
             <div className="flex items-center gap-1">
               <Check className="size-4 text-primary" />
-              <span>Гарантия качества</span>
+              <span>{t('featureQualityGuarantee')}</span>
             </div>
           </div>
         </motion.div>

@@ -1,0 +1,12 @@
+{
+  "HeroSection": {
+    "badge": "简体中文",
+    "title": "您的业务——我们的专业团队",
+    "description": "在这里快速找到经过审核的专家：从会计到开发人员。我们负责合同流程，并对结果提供保障。",
+    "ctaPrimary": "挑选专家",
+    "ctaSecondary": "预约咨询",
+    "featureNoPrepay": "无需预付款",
+    "featureTransparentContract": "合同透明",
+    "featureQualityGuarantee": "质量保障"
+  }
+}
