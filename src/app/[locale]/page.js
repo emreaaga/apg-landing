@@ -37,7 +37,6 @@ export default function LandingPage() {
         <FeatureSection container={container} item={item} />
 
         {/* How It Works Section */}
-
         <WorkingSection />
 
         {/* Testimonials Section */}

@@ -1,6 +1,6 @@
 {
   "HeroSection": {
-    "badge": "Launch soon", 
+    "badge": "Launch soon",
     "title": "Your business — our professionals",
     "description": "A platform to quickly find vetted experts, from accountants to developers. We handle the contracts and guarantee results.",
     "ctaPrimary": "Find a specialist",
@@ -8,5 +8,51 @@
     "featureNoPrepay": "No prepayment",
     "featureTransparentContract": "Transparent contract",
     "featureQualityGuarantee": "Quality guarantee"
+  },
+  "features": {
+    "badge": "Features",
+    "title": "Everything to solve your tasks",
+    "description": "Our platform provides convenient tools to select verified specialists, draft contracts, and control service quality.",
+    "fastSelection": {
+      "title": "Fast specialist matching",
+      "description": "Find professionals for any task—from accounting to development—in just minutes."
+    },
+    "transparentContracts": {
+      "title": "Transparent contracts",
+      "description": "All deals are processed through our platform with clear terms and guarantees."
+    },
+    "vettedPerformers": {
+      "title": "Verified performers",
+      "description": "We work only with qualified specialists who have passed our vetting."
+    },
+    "qualityControl": {
+      "title": "Quality control",
+      "description": "We monitor task execution and ensure a high level of service."
+    },
+    "flexibleSolutions": {
+      "title": "Flexible solutions",
+      "description": "Choose services tailored to your needs: one-time projects or long-term collaboration."
+    },
+    "support24": {
+      "title": "24/7 support",
+      "description": "Our team is always available to assist you at every step."
+    }
+  },
+   "WorkingSection": {
+    "badge": "How it works",
+    "title": "Simple process, reliable results",
+    "description": "Get started in minutes and let us handle finding the best professionals for your business.",
+    "step1": {
+      "title": "Submit a request",
+      "description": "Select the service you need and fill out a short form. It takes less than a minute."
+    },
+    "step2": {
+      "title": "Choose a specialist",
+      "description": "We will recommend vetted professionals that match your requirements."
+    },
+    "step3": {
+      "title": "Receive results",
+      "description": "Sign a contract with us and we will ensure quality delivery."
+    }
   }
 }

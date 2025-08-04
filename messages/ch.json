@@ -8,5 +8,51 @@
     "featureNoPrepay": "无需预付款",
     "featureTransparentContract": "合同透明",
     "featureQualityGuarantee": "质量保障"
+  },
+  "features": {
+    "badge": "功能",
+    "title": "全面解决您的需求",
+    "description": "我们的平台提供便捷的工具，用于筛选认证专家、起草合同并监督服务质量。",
+    "fastSelection": {
+      "title": "快速匹配专家",
+      "description": "在几分钟内为任何任务（从会计到开发）寻找专业人士。"
+    },
+    "transparentContracts": {
+      "title": "透明合同",
+      "description": "所有交易均通过我们的平台处理，条款清晰，提供保障。"
+    },
+    "vettedPerformers": {
+      "title": "审核专家",
+      "description": "我们仅与通过审核的合格专家合作。"
+    },
+    "qualityControl": {
+      "title": "质量控制",
+      "description": "我们监控任务执行情况，确保高水平的服务。"
+    },
+    "flexibleSolutions": {
+      "title": "灵活解决方案",
+      "description": "选择适合您需求的服务：一次性项目或长期合作。"
+    },
+    "support24": {
+      "title": "24/7 支持",
+      "description": "我们的团队随时准备在每个环节为您提供帮助。"
+    }
+  },
+  "WorkingSection": {
+    "badge": "如何运作",
+    "title": "简易流程，可靠结果",
+    "description": "几分钟内开始使用，让我们为您的业务寻找最佳专家。",
+    "step1": {
+      "title": "提交请求",
+      "description": "选择所需服务并填写简短表单，耗时不到一分钟。"
+    },
+    "step2": {
+      "title": "选择专家",
+      "description": "我们将为您推荐符合您需求的审核专家。"
+    },
+    "step3": {
+      "title": "获取结果",
+      "description": "与我们签订合同，我们将确保高质量交付。"
+    }
   }
 }
