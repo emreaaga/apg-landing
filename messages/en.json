@@ -38,7 +38,7 @@
       "description": "Our team is always available to assist you at every step."
     }
   },
-   "WorkingSection": {
+  "WorkingSection": {
     "badge": "How it works",
     "title": "Simple process, reliable results",
     "description": "Get started in minutes and let us handle finding the best professionals for your business.",
@@ -54,5 +54,87 @@
       "title": "Receive results",
       "description": "Sign a contract with us and we will ensure quality delivery."
     }
+  },
+  "TestimonialSection": {
+    "badge": "Testimonials",
+    "title": "Trusted by our clients",
+    "description": "Find out what our clients say about working with our platform and specialists.",
+    "testimonial1_quote": "The platform helped us find an excellent accountant in a day. We signed the contract quickly, everything was transparent and hassle-free.",
+    "testimonial1_author": "Anna Smirnova",
+    "testimonial1_role": "CFO, TechTrend",
+    "testimonial2_quote": "Thanks to the platform, we hired a developer for our website. The quality of work exceeded expectations, and the support was top-notch.",
+    "testimonial2_author": "Ivan Petrov",
+    "testimonial2_role": "Marketer, StartUpNow",
+    "testimonial3_quote": "The support team responds instantly, and the specialist matching process is very convenient. Now all our tasks are handled by professionals.",
+    "testimonial3_author": "Ekaterina Lebedeva",
+    "testimonial3_role": "Project Manager, GrowthPoint",
+    "testimonial4_quote": "We tried working directly with freelancers, but this platform simplified everything: from selection to contract. Highly recommended!",
+    "testimonial4_author": "Dmitry Kozlov",
+    "testimonial4_role": "CEO, InnovateRus",
+    "testimonial5_quote": "The platform allowed us to focus on our business instead of finding specialists. All processes are clear and transparent.",
+    "testimonial5_author": "Maria Ivanova",
+    "testimonial5_role": "HR Director, RemoteWorks",
+    "testimonial6_quote": "We reduced our outsourcing costs by 25% thanks to the quick matching of specialists and transparent working conditions.",
+    "testimonial6_author": "Alexey Sokolov",
+    "testimonial6_role": "COO, ScaleRus"
+  },
+  "FAQSection": {
+    "badge": "FAQ",
+    "title": "Frequently Asked Questions",
+    "description": "Find answers to common questions about our platform.",
+    "faq1_question": "How do I get started with the platform?",
+    "faq1_answer": "Simply submit a request by selecting the service you need. We'll match you with a specialist and draft the contract within one business day. No prepayment is required.",
+    "faq2_question": "Can I change the specialist?",
+    "faq2_answer": "Yes, if the specialist does not meet your needs, we'll promptly find another professional who fits your requirements at no additional cost.",
+    "faq3_question": "How many specialists can I hire?",
+    "faq3_answer": "You can hire as many specialists as you need for your project. We offer both one-time services and long-term collaborations, with no limits.",
+    "faq4_question": "Are there discounts for small businesses?",
+    "faq4_answer": "Yes, we offer special terms for small businesses and startups. Contact our team for more details.",
+    "faq5_question": "How is the quality of services ensured?",
+    "faq5_answer": "We work only with vetted professionals who have passed our verification process. We also monitor task execution and provide a guarantee on results.",
+    "faq6_question": "What support do you provide?",
+    "faq6_answer": "We offer 24/7 support via email and phone for all clients. We also have a knowledge base and chat for swift assistance at any stage."
+  },
+  "CTASection": {
+    "heading": "Ready to find the best specialists?",
+    "description": "Join hundreds of clients who have already entrusted us with their tasks and received professional solutions.",
+    "ctaPrimary": "Find a specialist",
+    "ctaSecondary": "Request a consultation",
+    "footerText": "No prepayment. Transparent contract. Cancel at any time."
+  },
+  "Footer": {
+    "description": "Find the best specialists for your business. We provide transparent contracts and quality services.",
+    "services_title": "Services",
+    "services_item1": "Features",
+    "services_item2": "Pricing",
+    "services_item3": "Specialists",
+    "resources_title": "Resources",
+    "resources_item1": "Guides",
+    "resources_item2": "Blog",
+    "resources_item3": "Support",
+    "company_title": "Company",
+    "company_item1": "About Us",
+    "company_item2": "Careers",
+    "company_item3": "Privacy Policy",
+    "company_item4": "Contact Us",
+    "copyright": "© {year} APG. All rights reserved.",
+    "bottom_privacy": "Privacy Policy",
+    "bottom_terms": "Terms of Use",
+    "bottom_cookies": "Cookie Policy"
+  },
+  "Navbar": {
+    "navMain": "Main",
+    "navSpecialists": "Specialists",
+    "navServices": "Services",
+    "services": {
+      "legal": "Legal services",
+      "accounting": "Accounting services",
+      "it": "IT services",
+      "hr": "HR services",
+      "taxConsulting": "Tax consulting",
+      "other": "Other services"
+    },
+    "toggleTheme": "Toggle theme",
+    "toggleMenu": "Toggle menu"
   }
 }

@@ -4,8 +4,11 @@ import { motion } from "framer-motion";
 import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 const CTASection = () => {
+  const t = useTranslations('CTASection');
+
   return (
     <section className="w-full py-20 md:py-32 bg-gradient-to-br from-primary to-primary/80 dark:from-gray-100 dark:to-gray-500 text-primary-foreground relative overflow-hidden">
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(to_right,#ffffff10_1px,transparent_1px),linear-gradient(to_bottom,#ffffff10_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
@@ -20,28 +23,24 @@ const CTASection = () => {
           transition={{ duration: 0.5 }}
           className="flex flex-col items-center justify-center space-y-6 text-center"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">
-            Готовы найти лучших специалистов?
-          </h2>
-          <p className="mx-auto max-w-[700px] text-primary-foreground/80 md:text-xl">
-            Присоединяйтесь к сотням клиентов, которые уже доверили нам свои задачи и получили профессиональные решения.
-          </p>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight">{t('heading')}</h2>
+          <p className="mx-auto max-w-[700px] text-primary-foreground/80 md:text-xl">{t('description')}</p>
           <div className="flex flex-col sm:flex-row gap-4 mt-4">
             <Link
               href="/specialists"
               passHref
             >
               <Button
-              size="lg"
-              variant="secondary"
-              className="rounded-full h-12 px-8 text-base cursor-pointer group"
-            >
-              Подобрать специалиста
+                size="lg"
+                variant="secondary"
+                className="rounded-full h-12 px-8 text-base cursor-pointer group"
+              >
+                {t('ctaPrimary')}
               <ArrowRight
-                className="group-hover:translate-x-1
+                  className="group-hover:translate-x-1
                transition-all ease-in-out duration-200 size-4"
-              />
-            </Button>
+                />
+              </Button>
             </Link>
 
             <Link
@@ -49,17 +48,15 @@ const CTASection = () => {
               passHref
             >
               <Button
-              size="lg"
-              variant="outline"
-              className="rounded-full h-12 px-8 text-base bg-transparent border-white text-white hover:text-white hover:bg-white/10 cursor-pointer dark:text-neutral-700 dark:bg-white dark:hover:bg-gray-100"
-            >
-              Заказать консультацию
-            </Button>
+                size="lg"
+                variant="outline"
+                className="rounded-full h-12 px-8 text-base bg-transparent border-white text-white hover:text-white hover:bg-white/10 cursor-pointer dark:text-neutral-700 dark:bg-white dark:hover:bg-gray-100"
+              >
+                {t('ctaSecondary')}
+              </Button>
             </Link>
           </div>
-          <p className="text-sm text-primary-foreground/80 mt-4">
-            Без предоплаты. Прозрачный договор. Отмена в любой момент.
-          </p>
+          <p className="text-sm text-primary-foreground/80 mt-4">{t('footerText')}</p>
         </motion.div>
       </div>
     </section>

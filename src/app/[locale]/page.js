@@ -42,9 +42,6 @@ export default function LandingPage() {
         {/* Testimonials Section */}
         <TestimonialSection />
 
-        {/* Pricing Section */}
-        {/* <PricingSection /> */}
-
         {/* FAQ Section */}
         <FAQSection />
 

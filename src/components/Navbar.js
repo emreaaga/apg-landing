@@ -18,6 +18,7 @@ import {
   NavigationMenuLink
 } from "@/components/ui/navigation-menu";
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { useTranslations } from "next-intl";
 
 const Navbar = () => {
   const locale = useLocale();
@@ -25,6 +26,7 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const t = useTranslations('Navbar')
 
   useEffect(() => {
     setMounted(true);
@@ -66,38 +68,38 @@ const Navbar = () => {
             href="/"
             className="text-base font-medium text-muted-foreground transition-colors hover:text-foreground"
           >
-            Главное
+            {t('navMain')}
           </Link>
           <Link
             href="/specialists"
             className="text-base font-medium text-muted-foreground transition-colors hover:text-foreground"
           >
-            Специалисты
+            {t('navSpecialists')}
           </Link>
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="text-base font-medium text-muted-foreground hover:text-foreground bg-transparent">
-                  Услуги
+                  {t('navServices')}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className="p-4 bg-popover shadow-lg rounded-md min-w-[200px]">
                   <NavigationMenuLink asChild>
-                    <Link href="/services/legal">Юридические</Link>
+                    <Link href="/services/legal">{t('services.legal')}</Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link href="/">Бухгалтерские</Link>
+                    <Link href="/">{t('services.accounting')}</Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link href="/">IT-Услуги</Link>
+                    <Link href="/">{t('services.it')}</Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link href="/">HR-услуги</Link>
+                    <Link href="/">{t('services.hr')}</Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link href="/">Налоговый консалтинг</Link>
+                    <Link href="/">{t('services.taxConsulting')}</Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link href="/">Иные услуги</Link>
+                    <Link href="/">{t('services.other')}</Link>
                   </NavigationMenuLink>
                 </NavigationMenuContent>
               </NavigationMenuItem>
@@ -118,7 +120,7 @@ const Navbar = () => {
             ) : (
               <Moon className="size-[18px]" />
             )}
-            <span className="sr-only">Toggle theme</span>
+            <span className="sr-only">{t('toggleTheme')}</span>
           </Button>
           <Button
             variant="ghost"
@@ -127,7 +129,7 @@ const Navbar = () => {
             className="md:hidden"
           >
             {mobileMenuOpen ? <X className="size-5" /> : <Menu className="size-5" />}
-            <span className="sr-only">Toggle menu</span>
+            <span className="sr-only">{t('toggleTheme')}</span>
           </Button>
         </div>
 
@@ -144,26 +146,35 @@ const Navbar = () => {
                 className="py-2 text-sm font-medium text-foreground hover:underline"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Главное
+                {t('navMain')}
               </Link>
               <Link
                 href="/specialists"
                 className="py-2 text-sm font-medium text-foreground hover:underline"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Специалисты
+                {t('navSpecialists')}
               </Link>
               <div className="pl-4">
-                <span className="text-sm font-medium text-muted-foreground">Услуги</span>
+                <span className="text-sm font-medium text-muted-foreground">{t('navServices')}</span>
                 <div className="mt-2 space-y-2">
                   <Link href="/services/legal" className="block py-1 text-sm text-foreground hover:underline" onClick={() => setMobileMenuOpen(false)}>
-                    Юридические
+                    {t('services.legal')}
                   </Link>
                   <Link href="/" className="block py-1 text-sm text-foreground hover:underline" onClick={() => setMobileMenuOpen(false)}>
-                    Бухгалтерские
+                    {t('services.accounting')}
                   </Link>
                   <Link href="/" className="block py-1 text-sm text-foreground hover:underline" onClick={() => setMobileMenuOpen(false)}>
-                    IT-услуги
+                    {t('services.it')}
+                  </Link>
+                  <Link href="/" className="block py-1 text-sm text-foreground hover:underline" onClick={() => setMobileMenuOpen(false)}>
+                    {t('services.hr')}
+                  </Link>
+                  <Link href="/" className="block py-1 text-sm text-foreground hover:underline" onClick={() => setMobileMenuOpen(false)}>
+                    {t('services.taxConsulting')}
+                  </Link>
+                  <Link href="/" className="block py-1 text-sm text-foreground hover:underline" onClick={() => setMobileMenuOpen(false)}>
+                    {t('services.other')}
                   </Link>
                 </div>
               </div>

@@ -54,5 +54,87 @@
       "title": "获取结果",
       "description": "与我们签订合同，我们将确保高质量交付。"
     }
+  },
+  "TestimonialSection": {
+    "badge": "客户评价",
+    "title": "客户信赖我们",
+    "description": "看看客户对使用我们平台和专家服务的评价。",
+    "testimonial1_quote": "该平台帮助我们在一天内找到了一位优秀的会计师。我们快速签署了合同，一切都透明且无任何麻烦。",
+    "testimonial1_author": "Anna Smirnova",
+    "testimonial1_role": "财务总监，TechTrend",
+    "testimonial2_quote": "多亏了该平台，我们为网站聘请了开发人员。工作的质量超出预期，支持也很到位。",
+    "testimonial2_author": "Ivan Petrov",
+    "testimonial2_role": "市场营销，StartUpNow",
+    "testimonial3_quote": "客服团队响应速度快，专家匹配过程非常方便。现在所有任务都由专业人士完成。",
+    "testimonial3_author": "Ekaterina Lebedeva",
+    "testimonial3_role": "项目经理，GrowthPoint",
+    "testimonial4_quote": "我们尝试过直接与自由职业者合作，但该平台简化了一切：从筛选到签约。强烈推荐！",
+    "testimonial4_author": "Dmitry Kozlov",
+    "testimonial4_role": "首席执行官，InnovateRus",
+    "testimonial5_quote": "该平台让我们能够专注于业务，而不是寻找专家。所有流程清晰透明。",
+    "testimonial5_author": "Maria Ivanova",
+    "testimonial5_role": "人力资源总监，RemoteWorks",
+    "testimonial6_quote": "由于快速匹配专家和透明的工作条件，我们将外包成本降低了25%。",
+    "testimonial6_author": "Alexey Sokolov",
+    "testimonial6_role": "运营总监，ScaleRus"
+  },
+  "FAQSection": {
+    "badge": "常见问题",
+    "title": "常见问题解答",
+    "description": "查找有关我们平台的常见问题解答。",
+    "faq1_question": "如何开始使用该平台？",
+    "faq1_answer": "只需选择所需服务并提交请求。我们将在一个工作日内为您匹配专家并起草合同。无需预付款。",
+    "faq2_question": "我可以更换专家吗？",
+    "faq2_answer": "可以，如果专家不符合您的需求，我们会迅速为您找到另一位符合要求的专业人士，无需额外费用。",
+    "faq3_question": "我可以雇佣多少专家？",
+    "faq3_answer": "您可以根据项目需要雇佣任意数量的专家。我们提供一次性服务和长期合作，无任何限制。",
+    "faq4_question": "小型企业有折扣吗？",
+    "faq4_answer": "有，我们为小型企业和初创公司提供特殊优惠。欲了解详细信息，请联系我们的团队。",
+    "faq5_question": "如何确保服务质量？",
+    "faq5_answer": "我们仅与通过验证的专业人士合作。我们还监控任务执行并对结果提供保证。",
+    "faq6_question": "您提供什么支持？",
+    "faq6_answer": "我们为所有客户提供 24/7 的电子邮件和电话支持。我们还有知识库和聊天功能，可在任何阶段提供快速帮助。"
+  },
+  "CTASection": {
+    "heading": "准备好寻找最优秀的专家了吗？",
+    "description": "加入数百位客户，他们已经将任务交给我们并获得了专业解决方案。",
+    "ctaPrimary": "寻找专家",
+    "ctaSecondary": "预约咨询",
+    "footerText": "无需预付款。合同透明。可随时取消。"
+  },
+  "Footer": {
+    "description": "为您的业务寻找最佳专家。我们提供透明的合同和优质服务。",
+    "services_title": "服务",
+    "services_item1": "功能",
+    "services_item2": "价格",
+    "services_item3": "专家",
+    "resources_title": "资源",
+    "resources_item1": "指南",
+    "resources_item2": "博客",
+    "resources_item3": "支持",
+    "company_title": "公司",
+    "company_item1": "关于我们",
+    "company_item2": "招聘",
+    "company_item3": "隐私政策",
+    "company_item4": "联系我们",
+    "copyright": "© {year} APG。保留所有权利。",
+    "bottom_privacy": "隐私政策",
+    "bottom_terms": "使用条款",
+    "bottom_cookies": "Cookie 政策"
+  },
+  "Navbar": {
+    "navMain": "主页",
+    "navSpecialists": "专家",
+    "navServices": "服务",
+    "services": {
+      "legal": "法律服务",
+      "accounting": "会计服务",
+      "it": "IT 服务",
+      "hr": "人力资源服务",
+      "taxConsulting": "税务咨询",
+      "other": "其他服务"
+    },
+    "toggleTheme": "切换主题",
+    "toggleMenu": "切换菜单"
   }
 }

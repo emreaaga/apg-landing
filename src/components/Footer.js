@@ -2,8 +2,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
+  const t = useTranslations('Footer');
+  const year = new Date().getFullYear();
+
   return (
     <footer className="w-full border-t bg-background/95 backdrop-blur-sm ">
       <div className="flex flex-col gap-8 px-4 py-10 md:px-20 lg:py-16">
@@ -19,9 +23,7 @@ const Footer = () => {
               />
               <span>APG</span>
             </div>
-            <p className="text-sm text-muted-foreground">
-              Найдите лучших специалистов для вашего бизнеса. Мы обеспечиваем прозрачные договоры и качественные услуги.
-            </p>
+            <p className="text-sm text-muted-foreground">{t('description')}</p>
             <div className="flex gap-4">
               <Link
                 href="#"
@@ -88,14 +90,14 @@ const Footer = () => {
             </div>
           </div>
           <div className="space-y-4">
-            <h4 className="text-lg font-bold">Услуги</h4>
+            <h4 className="text-lg font-bold">{t('services_title')}</h4>
             <ul className="space-y-2 text-base">
               <li>
                 <Link
                   href="/#"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Возможности
+                  {t('services_item1')}
                 </Link>
               </li>
               <li>
@@ -103,7 +105,7 @@ const Footer = () => {
                   href="/#"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Цены
+                  {t('services_item2')}
                 </Link>
               </li>
               <li>
@@ -111,20 +113,20 @@ const Footer = () => {
                   href="/#"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Специалисты
+                  {t('services_item3')}
                 </Link>
               </li>
             </ul>
           </div>
           <div className="space-y-4">
-            <h4 className="text-lg font-bold">Ресурсы</h4>
+            <h4 className="text-lg font-bold">{t('resources_title')}</h4>
             <ul className="space-y-2 text-base">
               <li>
                 <Link
                   href="/#"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Руководства
+                  {t('resources_item1')}
                 </Link>
               </li>
               <li>
@@ -132,7 +134,7 @@ const Footer = () => {
                   href="/#"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Блог
+                  {t('resources_item2')}
                 </Link>
               </li>
               <li>
@@ -140,20 +142,20 @@ const Footer = () => {
                   href="/#"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Поддержка
+                  {t('resources_item3')}
                 </Link>
               </li>
             </ul>
           </div>
           <div className="space-y-4">
-            <h4 className="text-lg font-bold">Компания</h4>
+            <h4 className="text-lg font-bold">{t('company_title')}</h4>
             <ul className="space-y-2 text-base">
               <li>
                 <Link
                   href="/#"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  О нас
+                  {t('company_item1')}
                 </Link>
               </li>
               <li>
@@ -161,7 +163,7 @@ const Footer = () => {
                   href="/careers"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Вакансии
+                  {t('company_item2')}
                 </Link>
               </li>
               <li>
@@ -169,7 +171,7 @@ const Footer = () => {
                   href="/#"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Политика конфиденциальности
+                  {t('company_item3')}
                 </Link>
               </li>
               <li>
@@ -177,7 +179,7 @@ const Footer = () => {
                   href="/#"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Связаться с нами
+                  {t('company_item4')}
                 </Link>
               </li>
             </ul>
@@ -185,26 +187,26 @@ const Footer = () => {
         </div>
         <div className="flex flex-col gap-4 sm:flex-row justify-between items-center border-t border-border/40 pt-8">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} APG. Все права защищены.
+           {t('copyright', { year })}
           </p>
           <div className="flex gap-4">
             <Link
               href="/#"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
-              Политика конфиденциальности
+              {t('bottom_privacy')}
             </Link>
             <Link
               href="/#"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
-              Условия использования
+              {t('bottom_terms')}
             </Link>
             <Link
               href="/#"
               className="text-sm text-muted-foreground hover:text-foreground transition-colors"
             >
-              Политика использования cookies
+              {t('bottom_cookies')}
             </Link>
           </div>
         </div>
