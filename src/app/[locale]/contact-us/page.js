@@ -1,12 +1,16 @@
-"use client";
-import React from "react";
-import { motion } from "framer-motion";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Button } from "@/components/ui/button";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+'use client';
+
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Input } from '@/components/ui/input';
+import { Textarea } from '@/components/ui/textarea';
+import { Button } from '@/components/ui/button';
+import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 
 const ContactPage = () => {
+  const t = useTranslations('ContactPage');
+
   return (
     <section className="w-full py-20 px-6 md:px-10 bg-muted/30 dark:bg-black">
       <motion.div
@@ -17,10 +21,10 @@ const ContactPage = () => {
         className="text-center mb-12"
       >
         <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-          Подберём специалиста под ваш запрос
+          {t('heading')}
         </h2>
         <p className="text-muted-foreground mt-3 max-w-xl mx-auto">
-          Заполните форму — наш менеджер свяжется с вами и уточнит детали. Или напишите нам напрямую.
+          {t('subheading')}
         </p>
       </motion.div>
 
@@ -33,26 +37,28 @@ const ContactPage = () => {
           transition={{ duration: 0.5 }}
           className="bg-white dark:bg-muted p-8 rounded-xl shadow-md border"
         >
-          <h3 className="text-2xl font-semibold mb-6">Оставьте заявку</h3>
+          <h3 className="text-2xl font-semibold mb-6">
+            {t('form_heading')}
+          </h3>
           <form className="space-y-4">
             <Input
               type="text"
-              placeholder="Ваше имя"
+              placeholder={t('placeholder_name')}
               className="p-3 rounded-lg h-12"
             />
             <Input
               type="email"
-              placeholder="Email или мессенджер"
+              placeholder={t('placeholder_contact')}
               className="p-3 rounded-lg h-12"
             />
             <Textarea
-              placeholder="Опишите, кого ищете или какая задача стоит"
+              placeholder={t('placeholder_description')}
               className="p-3 rounded-lg h-28"
               rows={12}
               cols={20}
             />
             <Button className="w-full flex py-6 text-base items-center gap-2 cursor-pointer">
-              <Send size={20} /> Отправить заявку
+              <Send size={20} /> {t('button')}
             </Button>
           </form>
         </motion.div>
@@ -65,19 +71,21 @@ const ContactPage = () => {
           transition={{ duration: 0.5 }}
           className="border dark:bg-neutral-800 p-8 rounded-xl shadow-md"
         >
-          <h3 className="text-2xl font-semibold mb-6">Контакты</h3>
+          <h3 className="text-2xl font-semibold mb-6">
+            {t('contacts_heading')}
+          </h3>
           <div className="space-y-6">
             <div className="flex items-center gap-3">
               <Mail className="size-6" />
-              <p>apg-company@gmail.com</p>
+              <p>{t('email')}</p>
             </div>
             <div className="flex items-center gap-3">
               <Phone className="size-6" />
-              <p>+998 99 615 08 08</p>
+              <p>{t('phone')}</p>
             </div>
             <div className="flex items-center gap-3">
               <MapPin className="size-6" />
-              <p>Ташкент, IT-парк</p>
+              <p>{t('address')}</p>
             </div>
           </div>
         </motion.div>
