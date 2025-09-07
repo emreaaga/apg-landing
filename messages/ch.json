@@ -253,5 +253,67 @@
     "call_heading": "留下申请，我们会联系您",
     "call_subheading": "我们将为您提供咨询，并为您的情况提供最佳解决方案。",
     "call_button": "联系我们"
+  },
+  "ITServicesPage": {
+    "heading": "IT服务",
+    "description": "提供实惠的一站式套餐和月度支持。价格为参考，最终金额取决于具体需求。",
+    "service1_title": "落地页 (1–3区块)",
+    "service1_price": "500,000苏姆起",
+    "service1_features": [
+      "简洁现代设计",
+      "手机和电脑自适应",
+      "快速上线网站"
+    ],
+    "service2_title": "企业网站",
+    "service2_price": "1,500,000苏姆起",
+    "service2_features": [
+      "公司和服务介绍页面",
+      "新闻或博客栏目",
+      "联系表单"
+    ],
+    "service3_title": "网上商店",
+    "service3_price": "3,000,000苏姆起",
+    "service3_features": [
+      "商品目录和购物车",
+      "支持在线下单",
+      "简易后台管理"
+    ],
+    "service4_title": "业务聊天机器人",
+    "service4_price": "1,200,000苏姆起",
+    "service4_features": [
+      "自动回复客户",
+      "通过Telegram接收申请",
+      "简易后台管理"
+    ],
+    "service5_title": "系统集成与自动化",
+    "service5_price": "1,000,000苏姆起",
+    "service5_features": [
+      "支付系统对接",
+      "与其他服务数据交互",
+      "通知和报表"
+    ],
+    "service6_title": "技术支持 (月度)",
+    "service6_price": "300,000苏姆起 / 月",
+    "service6_features": [
+      "小型网站修改",
+      "更新和备份",
+      "使用过程咨询"
+    ],
+    "addons_heading": "附加服务",
+    "addons_list": [
+      "页面设计 — 200,000苏姆起",
+      "内容撰写 — 150,000苏姆起",
+      "SEO优化 — 300,000苏姆起",
+      "数据迁移 — 250,000苏姆起"
+    ],
+    "most_popular": "最受欢迎",
+    "per_project": "一站式套餐",
+    "per_month": "/ 月",
+    "plan_cta": "选择",
+    "cta_heading": "需要报价吗？",
+    "cta_text": "请简要描述您的项目 —— 我们会提供周期和预算建议。",
+    "cta_button": "联系我们",
+    "tabs_main": "主要",
+    "tabs_addons": "附加"
   }
 }

@@ -90,16 +90,16 @@ const Navbar = () => {
                     <Link href="/services/accounting">{t('services.accounting')}</Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link href="/">{t('services.it')}</Link>
+                    <Link href="/services/it">{t('services.it')}</Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link href="/">{t('services.hr')}</Link>
+                    <Link href="/services/hr">{t('services.hr')}</Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link href="/">{t('services.taxConsulting')}</Link>
+                    <Link href="/services/constulting">{t('services.taxConsulting')}</Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link href="/">{t('services.other')}</Link>
+                    <Link href="/services/other">{t('services.other')}</Link>
                   </NavigationMenuLink>
                 </NavigationMenuContent>
               </NavigationMenuItem>

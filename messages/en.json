@@ -253,5 +253,67 @@
     "call_heading": "Leave a request and we will contact you",
     "call_subheading": "We will advise you and offer the best solution for your situation.",
     "call_button": "Contact us"
+  },
+  "ITServicesPage": {
+    "heading": "IT Services",
+    "description": "Affordable turnkey packages and monthly support. Prices are approximate, the final amount depends on the task.",
+    "service1_title": "Landing page (1–3 sections)",
+    "service1_price": "from 500,000 UZS",
+    "service1_features": [
+      "Simple modern design",
+      "Responsive for phone and computer",
+      "Fast website launch"
+    ],
+    "service2_title": "Company website",
+    "service2_price": "from 1,500,000 UZS",
+    "service2_features": [
+      "Several pages about the company and services",
+      "News or blog section",
+      "Contact form"
+    ],
+    "service3_title": "Online store",
+    "service3_price": "from 3,000,000 UZS",
+    "service3_features": [
+      "Product catalog and cart",
+      "Accepting online orders",
+      "Simple admin panel"
+    ],
+    "service4_title": "Business chatbot",
+    "service4_price": "from 1,200,000 UZS",
+    "service4_features": [
+      "Automated client responses",
+      "Application intake via Telegram",
+      "Simple admin panel"
+    ],
+    "service5_title": "Integrations and automation",
+    "service5_price": "from 1,000,000 UZS",
+    "service5_features": [
+      "Payment system integration",
+      "Data exchange with other services",
+      "Notifications and reports"
+    ],
+    "service6_title": "Support (monthly)",
+    "service6_price": "from 300,000 UZS / month",
+    "service6_features": [
+      "Minor website edits",
+      "Updates and backups",
+      "Work process consultations"
+    ],
+    "addons_heading": "Additional",
+    "addons_list": [
+      "Page design — from 200,000 UZS",
+      "Content writing — from 150,000 UZS",
+      "SEO optimization — from 300,000 UZS",
+      "Data migration — from 250,000 UZS"
+    ],
+    "most_popular": "Most Popular",
+    "per_project": "turnkey package",
+    "per_month": "/ month",
+    "plan_cta": "Choose",
+    "cta_heading": "Need a cost estimate?",
+    "cta_text": "Describe your project briefly — we will suggest deadlines and budget.",
+    "cta_button": "Contact us",
+    "tabs_main": "Main",
+    "tabs_addons": "Additional"
   }
 }

@@ -2,11 +2,13 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Tabs, TabsContent} from "@/components/ui/tabs";
+import { Tabs, TabsContent } from "@/components/ui/tabs";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
+
 
 const PricingSection = () => {
   const tAcc = useTranslations("AccountingServicesPage");
@@ -80,9 +82,8 @@ function PlanGrid({ plans, periodLabel, mostPopularLabel }) {
           transition={{ duration: 0.5, delay: i * 0.1 }}
         >
           <Card
-            className={`relative overflow-hidden h-full ${
-              plan.popular ? "border-primary shadow-lg" : "border-border/40 shadow-md"
-            } bg-gradient-to-b from-background to-muted/10 backdrop-blur`}
+            className={`relative overflow-hidden h-full ${plan.popular ? "border-primary shadow-lg" : "border-border/40 shadow-md"
+              } bg-gradient-to-b from-background to-muted/10 backdrop-blur`}
           >
             {plan.popular && (
               <div className="absolute top-0 right-0 bg-primary text-primary-foreground px-3 py-1 text-[10px] md:text-xs font-medium rounded-bl-lg">
@@ -115,14 +116,16 @@ function PlanGrid({ plans, periodLabel, mostPopularLabel }) {
                   </li>
                 ))}
               </ul>
-
               <Button
-                className={`w-full mt-auto rounded-full cursor-pointer py-4 text-sm md:text-base ${
-                  plan.popular ? "bg-primary hover:bg-primary/90" : "bg-muted hover:bg-muted/80"
-                }`}
+                asChild
+                className={`w-full mt-auto rounded-full cursor-pointer py-4 text-sm md:text-base ${plan.popular ? "bg-primary hover:bg-primary/90" : "bg-muted hover:bg-muted/80"
+                  }`}
                 variant={plan.popular ? "default" : "outline"}
               >
-                {plan.cta}
+                <Link href='/contact-us'>
+                  {plan.cta}
+                </Link>
+
               </Button>
             </CardContent>
           </Card>

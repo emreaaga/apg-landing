@@ -4,7 +4,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { useTranslations } from 'next-intl';
 import PricingSection from "@/components/PricingSection";
-
+import Link from 'next/link';
 
 export default function AccountingServicesPage() {
     const t = useTranslations('AccountingServicesPage');
@@ -17,8 +17,10 @@ export default function AccountingServicesPage() {
                 <p className="text-muted-foreground mb-6">
                     {t('call_subheading')}
                 </p>
-                <Button variant="default" className={"cursor-pointer"}>
+                <Button asChild variant="default" className={"cursor-pointer"}>
+                    <Link href="/contact-us">
                     {t('call_button')}
+                    </Link>
                 </Button>
             </div>
         </>
