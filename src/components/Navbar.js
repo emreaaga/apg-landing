@@ -87,7 +87,7 @@ const Navbar = () => {
                     <Link href="/services/legal">{t('services.legal')}</Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
-                    <Link href="/">{t('services.accounting')}</Link>
+                    <Link href="/services/accounting">{t('services.accounting')}</Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink asChild>
                     <Link href="/">{t('services.it')}</Link>
@@ -161,7 +161,7 @@ const Navbar = () => {
                   <Link href="/services/legal" className="block py-1 text-sm text-foreground hover:underline" onClick={() => setMobileMenuOpen(false)}>
                     {t('services.legal')}
                   </Link>
-                  <Link href="/" className="block py-1 text-sm text-foreground hover:underline" onClick={() => setMobileMenuOpen(false)}>
+                  <Link href="/services/accounting" className="block py-1 text-sm text-foreground hover:underline" onClick={() => setMobileMenuOpen(false)}>
                     {t('services.accounting')}
                   </Link>
                   <Link href="/" className="block py-1 text-sm text-foreground hover:underline" onClick={() => setMobileMenuOpen(false)}>

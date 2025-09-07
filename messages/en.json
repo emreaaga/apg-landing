@@ -213,5 +213,45 @@
     "call_heading": "Submit a request and we will contact you",
     "call_subheading": "We will advise you and offer the optimal solution for your situation.",
     "call_button": "Contact Us"
+  },
+  "AccountingServicesPage": {
+    "heading": "Accounting Services",
+    "description": "Service packages for individual entrepreneurs, small businesses, and large companies.",
+    "tariff1_title": "Basic Plan",
+    "tariff1_price": "1M - 1.5M uzs",
+    "tariff1_includes": [
+      "Accounting under patent or simplified taxation system (ENT)",
+      "Preparation and timely submission of tax and statistical reports",
+      "Consultations on current tax issues",
+      "Assistance with electronic platforms (my.soliq.uz, E-Hisobot, etc.)"
+    ],
+    "tariff2_title": "Standard Plan",
+    "tariff2_price": "3M - 10M uzs",
+    "per_month": "per month",
+    "most_popular": "most popular",
+    "plan_cta": "Choose",
+    "tariff2_includes": [
+      "Full accounting and tax support",
+      "VAT accounting (if applicable)",
+      "HR records: employment contracts, payroll, vacation and sick leave calculation",
+      "Preparation and submission of all mandatory reports",
+      "Working with 1C:Accounting (or another system)",
+      "Electronic reporting and counterparty verification",
+      "Tax planning and optimization"
+    ],
+    "tariff3_title": "Premium Plan",
+    "tariff3_price": "10M - 20M uzs",
+    "tariff3_includes": [
+      "Personalized service with a dedicated accountant and lawyer",
+      "Accounting under international standards (IFRS)",
+      "Preparation for external audits, interaction with inspection authorities",
+      "Consultations on complex tax issues",
+      "Financial analysis and reporting for investors or management",
+      "Comprehensive support for contracts, advances, fixed assets and other operations",
+      "Representation in tax authorities by proxy"
+    ],
+    "call_heading": "Leave a request and we will contact you",
+    "call_subheading": "We will advise you and offer the best solution for your situation.",
+    "call_button": "Contact us"
   }
 }
