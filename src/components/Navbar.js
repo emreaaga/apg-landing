@@ -58,6 +58,7 @@ const Navbar = () => {
               width={32}
               height={32}
               className="rounded-lg object-contain"
+              priority
             />
             <span>APG</span>
           </div>

@@ -1,13 +1,9 @@
 "use client";
 
-import { useState, useEffect } from "react";
-
 import HeroSection from "@/components/HeroSection";
-import LogoSection from "@/components/LogoSection";
 import FeatureSection from "@/components/FeatureSection";
 import WorkingSection from "@/components/WorkingSection";
 import TestimonialSection from "@/components/TestimonialSection";
-import PricingSection from "@/components/PricingSection";
 import FAQSection from "@/components/FAQSection";
 import CTASection from "@/components/CTASection";
 

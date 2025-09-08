@@ -315,5 +315,77 @@
     "cta_button": "联系我们",
     "tabs_main": "主要",
     "tabs_addons": "附加"
+  },
+  "ConsultingServicesPage": {
+    "heading": "税务咨询",
+    "description": "提供税务问题咨询、税负优化及报表准备的支持服务。",
+    "service1_title": "税务咨询",
+    "service1_price": "从 500,000 苏姆起",
+    "service1_features": [
+      "解读税收法律法规",
+      "解答税务相关问题",
+      "提供最佳解决方案"
+    ],
+    "service2_title": "税务优化",
+    "service2_price": "从 1,000,000 苏姆起",
+    "service2_features": [
+      "分析当前税负",
+      "提出降低成本的建议",
+      "选择最优的纳税制度"
+    ],
+    "service3_title": "税务申报",
+    "service3_price": "从 800,000 苏姆起",
+    "service3_features": [
+      "编制申报表",
+      "及时提交报表",
+      "降低罚款风险"
+    ],
+    "service4_title": "税务稽查支持",
+    "service4_price": "从 1,500,000 苏姆起",
+    "service4_features": [
+      "准备相关文件",
+      "代表客户与税务机关沟通",
+      "稽查过程中的咨询支持"
+    ],
+    "plan_cta": "选择",
+    "call_heading": "需要税务帮助吗？",
+    "call_subheading": "我们将帮助优化税务并避免罚款风险。",
+    "call_button": "联系"
+  },
+  "OtherServicesPage": {
+    "heading": "其他服务",
+    "description": "为企业提供的附加服务：核查、审计、评估和保险。",
+    "service1_title": "通过PINFL核查个人数据",
+    "service1_price": "从 200,000 苏姆起",
+    "service1_features": [
+      "通过PINFL进行身份验证",
+      "核对基本信息（姓名、出生日期等）",
+      "提供核查结果报告"
+    ],
+    "service2_title": "审计",
+    "service2_price": "从 2,000,000 苏姆起",
+    "service2_features": [
+      "文件的初步分析",
+      "识别风险和不一致之处",
+      "改进会计的建议"
+    ],
+    "service3_title": "评估",
+    "service3_price": "从 3,000,000 苏姆起",
+    "service3_features": [
+      "资产或企业估值",
+      "市场价值计算",
+      "为银行/交易准备报告"
+    ],
+    "service4_title": "保险代理服务",
+    "service4_price": "从 100,000 苏姆起",
+    "service4_features": [
+      "选择合适的保险产品",
+      "协助办理保单",
+      "理赔过程中的支持"
+    ],
+    "plan_cta": "选择",
+    "call_heading": "需要其他服务的帮助吗？",
+    "call_subheading": "简要描述您的任务 —— 我们将提供解决方案和预估费用。",
+    "call_button": "联系"
   }
 }

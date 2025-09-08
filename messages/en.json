@@ -315,5 +315,77 @@
     "cta_button": "Contact us",
     "tabs_main": "Main",
     "tabs_addons": "Additional"
+  },
+  "ConsultingServicesPage": {
+    "heading": "Tax Consulting",
+    "description": "Consulting and support on taxation issues, tax optimization, and preparation of reports.",
+    "service1_title": "Tax Consultations",
+    "service1_price": "from 500,000 UZS",
+    "service1_features": [
+      "Explanation of tax legislation",
+      "Answers to taxation questions",
+      "Selection of optimal solutions"
+    ],
+    "service2_title": "Tax Optimization",
+    "service2_price": "from 1,000,000 UZS",
+    "service2_features": [
+      "Analysis of current tax burden",
+      "Proposals to reduce expenses",
+      "Choosing the most beneficial tax regime"
+    ],
+    "service3_title": "Tax Reporting",
+    "service3_price": "from 800,000 UZS",
+    "service3_features": [
+      "Preparation of declarations",
+      "Timely submission of reports",
+      "Reducing risk of penalties"
+    ],
+    "service4_title": "Audit Support",
+    "service4_price": "from 1,500,000 UZS",
+    "service4_features": [
+      "Preparation of documents",
+      "Representation in tax authorities",
+      "Consultations during inspection"
+    ],
+    "plan_cta": "Select",
+    "call_heading": "Need help with taxes?",
+    "call_subheading": "We’ll help optimize your taxes and avoid penalty risks.",
+    "call_button": "Contact Us"
+  },
+  "OtherServicesPage": {
+    "heading": "Other Services",
+    "description": "Additional business services: verification, audit, valuation, and insurance.",
+    "service1_title": "Data Verification by PINFL",
+    "service1_price": "from 200,000 UZS",
+    "service1_features": [
+      "Identity verification via PINFL",
+      "Checking basic details (full name, date of birth, etc.)",
+      "Report on verification results"
+    ],
+    "service2_title": "Audit",
+    "service2_price": "from 2,000,000 UZS",
+    "service2_features": [
+      "Preliminary document analysis",
+      "Identifying risks and inconsistencies",
+      "Recommendations for accounting improvements"
+    ],
+    "service3_title": "Valuation",
+    "service3_price": "from 3,000,000 UZS",
+    "service3_features": [
+      "Property or business valuation",
+      "Market value calculation",
+      "Report preparation for bank/transaction"
+    ],
+    "service4_title": "Insurance Agent",
+    "service4_price": "from 100,000 UZS",
+    "service4_features": [
+      "Selection of insurance products",
+      "Assistance with policy issuance",
+      "Support in insurance cases"
+    ],
+    "plan_cta": "Select",
+    "call_heading": "Need help with other services?",
+    "call_subheading": "Describe your task briefly — we’ll suggest a solution and estimated cost.",
+    "call_button": "Contact"
   }
 }
